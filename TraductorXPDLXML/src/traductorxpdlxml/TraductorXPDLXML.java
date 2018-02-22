@@ -4,7 +4,6 @@
  * and open the template in the editor.
  */
 package traductorxpdlxml;
-//hola
 /**
  *
  * @author HP
@@ -14,7 +13,7 @@ public class TraductorXPDLXML {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    public static void main(String[] args){
         // TODO code application logic here
     }
     
