@@ -6,6 +6,8 @@
 package traductorxpdlxml.xpdl;
 
 import java.io.File;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Unmarshaller;
@@ -15,20 +17,15 @@ import javax.xml.bind.Unmarshaller;
  * @author PC01
  */
 public class LectorXPDL {
-   /*   try {
+    {
+        try {
+            //Crear el contexto JAXB
             JAXBContext jc = JAXBContext.newInstance(Package.class);
+            //Permite leer archivos XML
             Unmarshaller u = jc.createUnmarshaller();
-            File f = new File("product.xml");
-            Package product = (Package) u.unmarshal(f);
-            //extraccion de variables
-            //PackageHeader
-            PackageHeader packageHeader= new PackageHeader();
-            String description=product.getPackageHeader().getDescription();
-            System.out.print(description);
-            //Pools
-            Pools pools= new Pools();
-
-        } catch (JAXBException e) {
+            Package product = (Package)u.unmarshal(new File("product.xml"));
+        } catch (JAXBException ex) {
+            Logger.getLogger(LectorXPDL.class.getName()).log(Level.SEVERE, null, ex);
         }
-*/
+        }
 }
