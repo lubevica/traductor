@@ -5,20 +5,32 @@
  */
 package traductorxpdlxml.uppaal;
 
-import javax.xml.bind.JAXBContext;
+import java.io.File;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.xml.bind.Marshaller;
+import javax.xml.bind.JAXBContext;
+import javax.xml.bind.JAXBException;
+import traductorxpdlxml.xpdl.LectorXPDL;
 
 /**
  *
  * @author HP
  */
 public class impresorXML {
-                 /* JAXBContext context = JAXBContext.newInstance(nta.class);
-
-		Marshaller m = context.createMarshaller();
-		m.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
-
-		nta object = new nta();
-		m.marshal(object, System.out);
-*/
+    {
+        try {
+            nta princ= new nta();
+            //Contexto
+            JAXBContext context = JAXBContext.newInstance(nta.class);
+            //Realiza la conversion de los objetos Java a XML
+            Marshaller m = context.createMarshaller();
+            //Preparando el formato del archivo XML    
+            m.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
+            //Realiza la conversion a XML
+            m.marshal(princ, new File("product.xml"));
+        } catch (JAXBException ex) {
+            Logger.getLogger(LectorXPDL.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        }
 }
