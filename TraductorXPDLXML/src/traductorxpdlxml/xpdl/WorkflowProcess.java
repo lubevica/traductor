@@ -4,24 +4,21 @@
  * and open the template in the editor.
  */
 package traductorxpdlxml.xpdl;
-import traductorxpdlxml.xpdl.ProcessType;
-import traductorxpdlxml.xpdl.Activities;
-import traductorxpdlxml.xpdl.Transitions;
 /**
  *
  * @author PC01
  */
 class WorkflowProcess {
-    protected ProcessType workflowProcess;
+    protected ProcessType processType;
     protected Activities activities;
     protected Transitions transitions;
 
-    public ProcessType getWorkflowProcess() {
-        return workflowProcess;
+    public ProcessType getProcessType() {
+        return processType;
     }
 
-    public void setWorkflowProcess(ProcessType workflowProcess) {
-        this.workflowProcess = workflowProcess;
+    public void setProcessType(ProcessType processType) {
+        this.processType = processType;
     }
 
     public Activities getActivities() {

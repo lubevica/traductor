@@ -10,5 +10,13 @@ package traductorxpdlxml.xpdl;
  * @author PC01
  */
 class Task {
-    
+    int vacio;
+
+    public int getVacio() {
+        return vacio;
+    }
+
+    public void setVacio(int vacio) {
+        this.vacio = vacio;
+    }
 }

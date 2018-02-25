@@ -4,20 +4,23 @@
  * and open the template in the editor.
  */
 package traductorxpdlxml.xpdl;
-import traductorxpdlxml.xpdl.Pool;
+
+import java.util.List;
+
 /**
  *
  * @author PC01
  */
 public class Pools {
-    protected Pool pool;
 
-    public Pool getPool() {
+    protected List<Pool> pool;
+
+    public List<Pool> getPool() {
         return pool;
     }
 
-    public void setPool(Pool pool) {
+    public void setPool(List<Pool> pool) {
         this.pool = pool;
     }
-    
+
 }

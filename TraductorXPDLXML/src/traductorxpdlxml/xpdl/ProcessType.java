@@ -6,7 +6,6 @@
 package traductorxpdlxml.xpdl;
 
 import javax.xml.bind.annotation.XmlAttribute;
-import traductorxpdlxml.xpdl.Id;
 
 /**
  *
@@ -14,15 +13,15 @@ import traductorxpdlxml.xpdl.Id;
  */
 class ProcessType {
     @XmlAttribute
-    protected Id id;
+    protected String id;
     @XmlAttribute
     protected String name;
 
-    public Id getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(Id id) {
+    public void setId(String id) {
         this.id = id;
     }
 

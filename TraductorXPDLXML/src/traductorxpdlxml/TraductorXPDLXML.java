@@ -15,6 +15,11 @@ public class TraductorXPDLXML {
      */
     public static void main(String[] args){
         // TODO code application logic here
+         LectorXPDL();
+    }
+
+    private static void LectorXPDL() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
 }

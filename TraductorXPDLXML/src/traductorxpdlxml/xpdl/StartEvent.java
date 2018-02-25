@@ -13,6 +13,9 @@ import javax.xml.bind.annotation.XmlAttribute;
  */
 class StartEvent {
 
+    @XmlAttribute
+    protected String trigger;
+    
     public String getTrigger() {
         return trigger;
     }
@@ -20,6 +23,4 @@ class StartEvent {
     public void setTrigger(String trigger) {
         this.trigger = trigger;
     }
-    @XmlAttribute
-    protected String trigger;
 }

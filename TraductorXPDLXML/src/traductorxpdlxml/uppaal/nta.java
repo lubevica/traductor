@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 package traductorxpdlxml.uppaal;
+import java.util.List;
 import javax.xml.bind.annotation.XmlAttribute;
 
 import javax.xml.bind.annotation.XmlRootElement;
@@ -18,9 +19,17 @@ import javax.xml.bind.annotation.XmlRootElement;
 public class nta {
     
     public declaration decl;
-    public template temp;
+    public List<template> temp;
     public system syst;
     public queries quer;
+
+    public List<template> getTemp() {
+        return temp;
+    }
+
+    public void setTemp(List<template> temp) {
+        this.temp = temp;
+    }
     
     public declaration getDecl() {
         return decl;
@@ -28,14 +37,6 @@ public class nta {
 
     public void setDecl(declaration decl) {
         this.decl = decl;
-    }
-
-    public template getTemp() {
-        return temp;
-    }
-
-    public void setTemp(template temp) {
-        this.temp = temp;
     }
 
     public system getSyst() {

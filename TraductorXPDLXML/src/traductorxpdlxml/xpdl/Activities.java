@@ -5,19 +5,21 @@
  */
 package traductorxpdlxml.xpdl;
 
-import traductorxpdlxml.xpdl.Activity;
+import java.util.List;
+
 /**
  *
  * @author PC01
  */
 class Activities {
-    protected Activity activity;
+    protected List<Activity> activity;
 
-    public Activity getActivity() {
+    public List<Activity> getActivity() {
         return activity;
     }
 
-    public void setActivity(Activity activity) {
+    public void setActivity(List<Activity> activity) {
         this.activity = activity;
     }
+
 }

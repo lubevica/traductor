@@ -6,10 +6,6 @@
 package traductorxpdlxml.xpdl;
 
 import javax.xml.bind.annotation.XmlAttribute;
-import traductorxpdlxml.xpdl.Id;
-import traductorxpdlxml.xpdl.Event;
-import traductorxpdlxml.xpdl.NodeGraphicsInfos;
-import traductorxpdlxml.xpdl.Implementation;
 
 /**
  *
@@ -17,18 +13,18 @@ import traductorxpdlxml.xpdl.Implementation;
  */
 class Activity {
     @XmlAttribute
-    protected Id id;
+    protected String id;
     @XmlAttribute
     protected String nombre;
     protected Event event;
     protected NodeGraphicsInfos nodeGraphicsInfos;
     protected Implementation implementation;
 
-    public Id getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(Id id) {
+    public void setId(String id) {
         this.id = id;
     }
 

@@ -5,19 +5,21 @@
  */
 package traductorxpdlxml.xpdl;
 
-import traductorxpdlxml.xpdl.Transition;
+import java.util.List;
+
 /**
  *
  * @author PC01
  */
 class Transitions {
-    protected Transition transition;
+    protected List<Transition> transition;
 
-    public Transition getTransition() {
+    public List<Transition> getTransition() {
         return transition;
     }
 
-    public void setTransition(Transition transition) {
+    public void setTransition(List<Transition> transition) {
         this.transition = transition;
     }
+
 }

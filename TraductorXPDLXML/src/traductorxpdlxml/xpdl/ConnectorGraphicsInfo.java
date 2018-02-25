@@ -5,18 +5,21 @@
  */
 package traductorxpdlxml.xpdl;
 
+import java.util.List;
+
 /**
  *
  * @author PC01
  */
 class ConnectorGraphicsInfo {
 
-    public Coordinates getCoordinates() {
+    protected List<Coordinates> coordinates;
+
+    public List<Coordinates> getCoordinates() {
         return coordinates;
     }
 
-    public void setCoordinates(Coordinates coordinates) {
+    public void setCoordinates(List<Coordinates> coordinates) {
         this.coordinates = coordinates;
     }
-    protected Coordinates coordinates;
 }

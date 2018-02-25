@@ -4,6 +4,9 @@
  * and open the template in the editor.
  */
 package traductorxpdlxml.uppaal;
+
+import java.util.List;
+
 /**
  *
  * @author HP
@@ -11,9 +14,25 @@ package traductorxpdlxml.uppaal;
 public class template {
     protected name nombre;
     protected declaration decl;
-    protected location locati;
+    protected List<location> locati;
     protected init inic;
-    protected transition transt;
+    protected List<transition> transt;
+
+    public List<location> getLocati() {
+        return locati;
+    }
+
+    public void setLocati(List<location> locati) {
+        this.locati = locati;
+    }
+
+    public List<transition> getTranst() {
+        return transt;
+    }
+
+    public void setTranst(List<transition> transt) {
+        this.transt = transt;
+    }
 
     public name getNombre() {
         return nombre;
@@ -31,28 +50,12 @@ public class template {
         this.decl = decl;
     }
 
-    public location getLocati() {
-        return locati;
-    }
-
-    public void setLocati(location locati) {
-        this.locati = locati;
-    }
-
     public init getInic() {
         return inic;
     }
 
     public void setInic(init inic) {
         this.inic = inic;
-    }
-
-    public transition getTranst() {
-        return transt;
-    }
-
-    public void setTranst(transition transt) {
-        this.transt = transt;
     }
 
 }

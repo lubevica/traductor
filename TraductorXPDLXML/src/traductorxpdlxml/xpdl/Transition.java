@@ -6,24 +6,23 @@
 package traductorxpdlxml.xpdl;
 
 import javax.xml.bind.annotation.XmlAttribute;
-import traductorxpdlxml.xpdl.Id;
 /**
  *
  * @author PC01
  */
 class Transition {
     @XmlAttribute
-    protected Id id;
+    protected String id;
     @XmlAttribute
     protected String from;
     @XmlAttribute
     protected String to;
 
-    public Id getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(Id id) {
+    public void setId(String id) {
         this.id = id;
     }
 

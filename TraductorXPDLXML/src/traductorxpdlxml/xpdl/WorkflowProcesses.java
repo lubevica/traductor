@@ -4,19 +4,22 @@
  * and open the template in the editor.
  */
 package traductorxpdlxml.xpdl;
-import traductorxpdlxml.xpdl.WorkflowProcess;
+
+import java.util.List;
+
 /**
  *
  * @author PC01
  */
 public class WorkflowProcesses {
-    protected WorkflowProcess workflowProcess;
+    protected List<WorkflowProcess> workflowProcess;
 
-    public WorkflowProcess getWorkflowProcess() {
+    public List<WorkflowProcess> getWorkflowProcess() {
         return workflowProcess;
     }
 
-    public void setWorkflowProcess(WorkflowProcess workflowProcess) {
+    public void setWorkflowProcess(List<WorkflowProcess> workflowProcess) {
         this.workflowProcess = workflowProcess;
     }
+
 }

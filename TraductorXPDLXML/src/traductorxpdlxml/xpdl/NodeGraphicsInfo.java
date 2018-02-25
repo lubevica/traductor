@@ -4,7 +4,6 @@
  * and open the template in the editor.
  */
 package traductorxpdlxml.xpdl;
-import traductorxpdlxml.xpdl.Coordinates;
 /**
  *
  * @author PC01
