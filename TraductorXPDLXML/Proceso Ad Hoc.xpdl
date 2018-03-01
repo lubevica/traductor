@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Id="22657c2f-89de-4350-b3ab-3f8e232205d7" Name="Proceso Ad Hoc" xmlns="http://www.wfmc.org/2009/XPDL2.2">
+  <PackageHeader>
+    <XPDLVersion>2.2</XPDLVersion>
+    <Vendor>Bizagi Process Modeler.</Vendor>
+    <Created>2012-01-06T14:49:03.3268356-02:00</Created>
+    <ModificationDate>2012-12-13T18:00:13.6936392-02:00</ModificationDate>
+    <Description>Tumai</Description>
+    <Documentation>&lt;p&gt;&lt;span style="font-family:Segoe UI;font-size:8pt;"&gt;Imagine la reuni&amp;#243;n de un comit&amp;#233;. Al final de la reuni&amp;#243;n siempre quedan una serie de tareas para realizar. Ya que estas tareas solo se conocen luego de la reuni&amp;#243;n, se hace necesario utilizar el modelo para procesos Ad Hoc de Bizagi. Con la ayuda del modelo usted podr&amp;#225; asignar cualquier actividad a cualquier persona. &lt;/span&gt;&lt;/p&gt;</Documentation>
+  </PackageHeader>
+  <RedefinableHeader>
+    <Author>Bizagi Process Modeler</Author>
+    <Version>1.0</Version>
+    <Countrykey>CO</Countrykey>
+  </RedefinableHeader>
+  <ExternalPackages />
+  <Participants>
+    <Participant Id="096737f6-d284-462e-995b-f441c24278ff" Name="Responsable">
+      <ParticipantType Type="ROLE" />
+      <Description>Persona responsable de ejecutar una tarea.</Description>
+      <ExtendedAttributes>
+        <ExtendedAttribute Name="Responsable" />
+      </ExtendedAttributes>
+    </Participant>
+    <Participant Id="4162bcd1-d7b6-4b0e-a8c2-941c62612117" Name="Secretario del comité">
+      <ParticipantType Type="ROLE" />
+      <Description>Persona asignada para realizar el acta de la reunión del comité. </Description>
+      <ExtendedAttributes>
+        <ExtendedAttribute Name="Secretario_del_comité" />
+      </ExtendedAttributes>
+    </Participant>
+  </Participants>
+  <Pools>
+    <Pool Id="393a9091-9baf-4085-b993-8379dc2d80a4" Name="Proceso principal" Process="c8dd8da7-e8b0-4061-a9ff-bb0128c76a27" BoundaryVisible="false">
+      <Lanes />
+      <NodeGraphicsInfos>
+        <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="350" Width="700" BorderColor="-16777216" FillColor="-1">
+          <Coordinates XCoordinate="0" YCoordinate="0" />
+        </NodeGraphicsInfo>
+      </NodeGraphicsInfos>
+    </Pool>
+    <Pool Id="22657c2f-89de-4350-b3ab-3f8e232205d7" Name="TUMAI " Process="826a25e8-f080-471a-bda5-3aa0fd1c6ca2" BoundaryVisible="true">
+      <Lanes>
+        <Lane Id="ba7b51ff-8689-4a0f-bc24-d01d1157915b" Name="Comité" ParentPool="22657c2f-89de-4350-b3ab-3f8e232205d7">
+          <NodeGraphicsInfos>
+            <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="281" Width="744" BorderColor="-11513776" FillColor="-1">
+              <Coordinates XCoordinate="50" YCoordinate="0" />
+            </NodeGraphicsInfo>
+          </NodeGraphicsInfos>
+          <ExtendedAttributes />
+        </Lane>
+      </Lanes>
+      <NodeGraphicsInfos>
+        <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="281" Width="794" BorderColor="-16777216" FillColor="-1">
+          <Coordinates XCoordinate="30" YCoordinate="30" />
+        </NodeGraphicsInfo>
+      </NodeGraphicsInfos>
+    </Pool>
+  </Pools>
+  <Associations />
+  <Artifacts />
+  <WorkflowProcesses>
+    <WorkflowProcess Id="c8dd8da7-e8b0-4061-a9ff-bb0128c76a27" Name="Proceso principal">
+      <ProcessHeader>
+        <Created>2013-08-29T22:23:36.0519331-03:00</Created>
+        <Description>&lt;p&gt;&lt;span style="font-family:Segoe UI;font-size:8pt;"&gt; Es muy com&amp;#250;n encontrar dentro de los negocios casos en los cuales es necesario manejar un proceso que no tiene tareas ni el orden de ejecuci&amp;#243;n de estas definido (Proceso Ad Hoc).&lt;/span&gt;&lt;/p&gt;
+		&lt;p&gt;&lt;span style="font-family:Segoe UI;font-size:8pt;"&gt;Un proceso Ad Hoc consiste en una serie de actividades que no tienen un orden o un ejecutante definido. En este tipo de procesos los usuarios deben poder decidir  el Qu&amp;#233;, el Cu&amp;#225;ndo y el Quien de las actividades que se necesitan crear, logrando una interacci&amp;#243;n entre diferentes usuarios. &lt;/span&gt;&lt;/p&gt;
+		&lt;p&gt;&lt;span style="font-family:Segoe UI;font-size:8pt;"&gt;Bizagi propone un modelo para implementar procesos Ad Hoc. Est&amp;#233; modelo le permitir&amp;#225; no solo crear tareas en cualquier momento sino tambi&amp;#233;n ejecutarlas sin ning&amp;#250;n orden durante la vida del proceso.  Adicionalmente las tareas pueden ser asignadas a cualquier persona y ser programadas para ser realizadas en cualquier fecha. Los usuarios a los cuales les han sido asignadas tareas pueden crear tareas adicionales para ellos mismos o para otros participantes del proceso. &lt;/span&gt;&lt;/p&gt;
+		&lt;p&gt;&amp;nbsp;&lt;/p&gt;</Description>
+      </ProcessHeader>
+      <RedefinableHeader>
+        <Author />
+        <Version />
+        <Countrykey>CO</Countrykey>
+      </RedefinableHeader>
+      <ActivitySets />
+      <DataInputOutputs />
+      <ExtendedAttributes>
+        <ExtendedAttribute Name="Objetivos" Value="&lt;p&gt;&lt;span style=&quot;font-family:Segoe UI;font-size:8pt;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;font-family:Segoe UI;font-size:8pt;&quot;&gt;Mostrar la implementaci&amp;#243;n de un proceso Ad Hoc usando la suite de Bizagi. &lt;/span&gt;&lt;/p&gt;&#xA;		&lt;p&gt;&lt;span style=&quot;font-family:Segoe UI;font-size:8pt;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;font-family:Segoe UI;font-size:8pt;&quot;&gt;Implementar un proceso Ad Hoc utilizando el modelo propuesto. &lt;/span&gt;&lt;/p&gt;&#xA;		&lt;p&gt;&amp;nbsp;&lt;/p&gt;" />
+        <ExtendedAttribute Name="Alcance_x0020_de_x0020_la_x0020_automatización" Value="&lt;p&gt;&lt;span style=&quot;font-family:Segoe UI;font-size:8pt;&quot;&gt;La plantilla de Procesos Ad Hoc de Bizagi es dise&amp;#241;ada para implementar procesos complejos que necesite la ejecuci&amp;#243;n de tareas que son definidas durante la vida del proceso. La plantilla le permitir&amp;#225; crear y asignar tareas en cualquier momento del proceso y a cualquier persona.  &lt;/span&gt;&lt;/p&gt;" />
+        <ExtendedAttribute Name="Duración" Value="&lt;p&gt;&amp;nbsp;&lt;/p&gt;" />
+        <ExtendedAttribute Name="Ruta_x0020_del_x0020_proceso" Value="&lt;p&gt;&amp;nbsp;&lt;/p&gt;" />
+        <ExtendedAttribute Name="Dueño_x0020_del_x0020_proceso" Value="&lt;p&gt;&amp;nbsp;&lt;/p&gt;" />
+        <ExtendedAttribute Name="Definiciones" Value="Table" />
+        <ExtendedAttribute Name="Formas_x0020_globales" Value="Table" />
+        <ExtendedAttribute Name="Formas_x0020_de_x0020_resumen" Value="Table" />
+        <ExtendedAttribute Name="Formas_x0020_de_x0020_consulta" Value="Table" />
+        <ExtendedAttribute Name="Formas_x0020_de_x0020_administración" Value="Table" />
+        <ExtendedAttribute Name="Pestañas" Value="Table" />
+        <ExtendedAttribute Name="Anexos" Value="Table" />
+        <ExtendedAttribute Name="Control_x0020_de_x0020_Versiones" Value="Table" />
+      </ExtendedAttributes>
+    </WorkflowProcess>
+    <WorkflowProcess Id="826a25e8-f080-471a-bda5-3aa0fd1c6ca2" Name="Proceso Ad Hoc ">
+      <ProcessHeader>
+        <Created>2013-08-29T22:23:36.064637-03:00</Created>
+        <Description>&lt;p&gt;&lt;span style="font-family:Tahoma;font-size:8pt;"&gt; &lt;/span&gt;&lt;/p&gt;</Description>
+      </ProcessHeader>
+      <RedefinableHeader>
+        <Author />
+        <Version />
+        <Countrykey>CO</Countrykey>
+      </RedefinableHeader>
+      <ActivitySets />
+      <DataInputOutputs />
+      <Activities>
+        <Activity Id="1a628885-92c4-468d-a8d9-9b02526dd1f9" Name="">
+          <Description />
+          <Event>
+            <StartEvent Trigger="None" />
+          </Event>
+          <Documentation />
+          <NodeGraphicsInfos>
+            <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="30" Width="30" BorderColor="-10311914" FillColor="-1638505">
+              <Coordinates XCoordinate="129" YCoordinate="107" />
+            </NodeGraphicsInfo>
+          </NodeGraphicsInfos>
+          <ExtendedAttributes />
+        </Activity>
+        <Activity Id="82afeebe-8c9d-4a63-b830-a629cc950cce" Name="Reunión de Comité">
+          <Description>&lt;p&gt;&lt;span style="font-family:Segoe UI;font-size:8pt;"&gt;La primera actividad es registrar los detalles de la reuni&amp;#243;n de comit&amp;#233;. Es necesario incluir el tema, los objetivos y logros de la reuni&amp;#243;n. Adem&amp;#225;s en la forma de la actividad encontrar&amp;#225; una tabla de actividades, esta tabla le permitir&amp;#225; agregar todas aquellas tareas resultantes de la reuni&amp;#243;n, estas tareas pueden ser asignadas a cualquier persona y ser&amp;#225;n ejecutadas de forma paralela. &lt;/span&gt;&lt;/p&gt;</Description>
+          <Implementation>
+            <Task>
+              <TaskUser />
+            </Task>
+          </Implementation>
+          <Performers />
+          <Documentation>&lt;p&gt;&lt;span style="font-family:Segoe UI;font-size:8pt;"&gt;La primera actividad es registrar los detalles de la reuni&amp;#243;n de comit&amp;#233;. Es necesario incluir el tema, los objetivos y logros de la reuni&amp;#243;n. Adem&amp;#225;s en la forma de la actividad encontrar&amp;#225; una tabla de actividades, esta tabla le permitir&amp;#225; agregar todas aquellas tareas resultantes de la reuni&amp;#243;n, estas tareas pueden ser asignadas a cualquier persona y ser&amp;#225;n ejecutadas de forma paralela. &lt;/span&gt;&lt;/p&gt;</Documentation>
+          <Loop LoopType="None" />
+          <NodeGraphicsInfos>
+            <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="60" Width="90" BorderColor="-16553830" FillColor="-1249281">
+              <Coordinates XCoordinate="191" YCoordinate="92" />
+            </NodeGraphicsInfo>
+          </NodeGraphicsInfos>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="Asignaciones" Value="Table" />
+            <ExtendedAttribute Name="Formas" Value="Table" />
+            <ExtendedAttribute Name="Comportamientos_x0020_de_x0020_las_x0020_formas" Value="Table" />
+            <ExtendedAttribute Name="Acciones" Value="Table" />
+            <ExtendedAttribute Name="Notificaciones" Value="Table" />
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="61b5ffbd-8484-4ec9-8bb7-03af4247d21e" Name="Compuerta Paralela">
+          <Description>La compuerta abre dos caminos.
+El primer camino se dirige a un múltiple sub proceso el cual crea un caso del sub proceso Ejecutar Actividad Ad Hoc por cada actividad propuesta en la actividad Reunión de Comité. 
+El otro camino habilita un evento por el cual es posible crear nuevas actividades para ser ejecutadas por cualquier persona. Se pueden crear todas las actividades que se deseen y pueden ser creadas por cualquier persona que haya asistido al comité o que este dentro del proceso. 
+</Description>
+          <Route GatewayType="Parallel" />
+          <Documentation>La compuerta abre dos caminos.
+El primer camino se dirige a un múltiple sub proceso el cual crea un caso del sub proceso Ejecutar Actividad Ad Hoc por cada actividad propuesta en la actividad Reunión de Comité. 
+El otro camino habilita un evento por el cual es posible crear nuevas actividades para ser ejecutadas por cualquier persona. Se pueden crear todas las actividades que se deseen y pueden ser creadas por cualquier persona que haya asistido al comité o que este dentro del proceso. 
+</Documentation>
+          <NodeGraphicsInfos>
+            <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="40" Width="40" BorderColor="-5855715" FillColor="-52">
+              <Coordinates XCoordinate="314" YCoordinate="102" />
+            </NodeGraphicsInfo>
+          </NodeGraphicsInfos>
+          <ExtendedAttributes />
+        </Activity>
+        <Activity Id="9fb11e72-e68b-4245-96e5-709abfda404a" Name="Crear Tarea Ad Hoc">
+          <Description>&lt;p&gt;&lt;span style="font-family:Segoe UI;font-size:8pt;"&gt;El modelo del proceso Ad Hoc utiliza un evento disponible para todos los usuarios en todo momento del proceso. El evento permite crear y asignar nuevas actividades para ellos mismos o para otras personas. &lt;/span&gt;&lt;/p&gt;
+		&lt;p&gt;&lt;span style="font-family:Segoe UI;font-size:8pt;"&gt;En Crear Tarea Ad Hoc, los usuarios pueden incluir la informaci&amp;#243;n de la nueva tarea, por ejemplo la descripci&amp;#243;n de la tarea, la fecha l&amp;#237;mite y el responsable de realizarla. &lt;/span&gt;&lt;/p&gt;
+		&lt;p&gt;&lt;span style="font-family:Tahoma;font-size:8pt;"&gt; &lt;/span&gt;&lt;/p&gt;
+		&lt;p&gt;&lt;span style="font-family:Tahoma;font-size:8pt;"&gt; &lt;/span&gt;&lt;/p&gt;</Description>
+          <Event>
+            <IntermediateEvent Trigger="None" />
+          </Event>
+          <Documentation>&lt;p&gt;&lt;span style="font-family:Segoe UI;font-size:8pt;"&gt;El modelo del proceso Ad Hoc utiliza un evento disponible para todos los usuarios en todo momento del proceso. El evento permite crear y asignar nuevas actividades para ellos mismos o para otras personas. &lt;/span&gt;&lt;/p&gt;
+		&lt;p&gt;&lt;span style="font-family:Segoe UI;font-size:8pt;"&gt;En Crear Tarea Ad Hoc, los usuarios pueden incluir la informaci&amp;#243;n de la nueva tarea, por ejemplo la descripci&amp;#243;n de la tarea, la fecha l&amp;#237;mite y el responsable de realizarla. &lt;/span&gt;&lt;/p&gt;
+		&lt;p&gt;&lt;span style="font-family:Tahoma;font-size:8pt;"&gt; &lt;/span&gt;&lt;/p&gt;
+		&lt;p&gt;&lt;span style="font-family:Tahoma;font-size:8pt;"&gt; &lt;/span&gt;&lt;/p&gt;</Documentation>
+          <NodeGraphicsInfos>
+            <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="30" Width="30" BorderColor="-6909623" FillColor="-66833">
+              <Coordinates XCoordinate="319" YCoordinate="206" />
+            </NodeGraphicsInfo>
+          </NodeGraphicsInfos>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="Asignaciones" Value="Table" />
+            <ExtendedAttribute Name="Formas" Value="Table" />
+            <ExtendedAttribute Name="Comportamientos_x0020_de_x0020_las_x0020_formas" Value="Table" />
+            <ExtendedAttribute Name="Acciones" Value="Table" />
+            <ExtendedAttribute Name="Notificaciones" Value="Table" />
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="9ffa07e7-54d2-41bd-ae1f-aa7ee76980b7" Name="">
+          <Description />
+          <Route GatewayType="Parallel" />
+          <Documentation />
+          <NodeGraphicsInfos>
+            <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="40" Width="40" BorderColor="-5855715" FillColor="-52">
+              <Coordinates XCoordinate="437" YCoordinate="201" />
+            </NodeGraphicsInfo>
+          </NodeGraphicsInfos>
+          <ExtendedAttributes />
+        </Activity>
+        <Activity Id="8a8b3968-9ae4-47df-bde5-181869c32d76" Name="">
+          <Description />
+          <Event>
+            <EndEvent Result="Terminate" />
+          </Event>
+          <Documentation />
+          <NodeGraphicsInfos>
+            <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="30" Width="30" BorderColor="-6750208" FillColor="-1135958">
+              <Coordinates XCoordinate="587" YCoordinate="107" />
+            </NodeGraphicsInfo>
+          </NodeGraphicsInfos>
+          <ExtendedAttributes />
+        </Activity>
+        <Activity Id="4be455ab-6530-471d-9e57-3507c16b0836" Name="Realizar Tarea Ad Hoc">
+          <Description>El sub proceso ejecuta las actividades propuestas durante la reunión o a través del evento Crear Tarea Ad Hoc. Las actividades son ejecutadas en paralelo y el proceso no termina hasta que todas las tareas han sido realizadas. </Description>
+          <Implementation>
+            <SubFlow />
+          </Implementation>
+          <Performers />
+          <Documentation>El sub proceso ejecuta las actividades propuestas durante la reunión o a través del evento Crear Tarea Ad Hoc. Las actividades son ejecutadas en paralelo y el proceso no termina hasta que todas las tareas han sido realizadas. </Documentation>
+          <Loop LoopType="MultiInstance">
+            <LoopMultiInstance LoopCounter="0" />
+          </Loop>
+          <NodeGraphicsInfos>
+            <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="60" Width="90" BorderColor="-16553830" FillColor="-1249281">
+              <Coordinates XCoordinate="412" YCoordinate="92" />
+            </NodeGraphicsInfo>
+          </NodeGraphicsInfos>
+          <ExtendedAttributes />
+        </Activity>
+      </Activities>
+      <Transitions>
+        <Transition Id="5b41612d-d173-4592-aa6b-11f3a5316395" From="1a628885-92c4-468d-a8d9-9b02526dd1f9" To="82afeebe-8c9d-4a63-b830-a629cc950cce">
+          <Condition />
+          <Description />
+          <ConnectorGraphicsInfos>
+            <ConnectorGraphicsInfo ToolId="BizAgi_Process_Modeler" BorderColor="0">
+              <Coordinates XCoordinate="159" YCoordinate="122" />
+              <Coordinates XCoordinate="191" YCoordinate="122" />
+            </ConnectorGraphicsInfo>
+          </ConnectorGraphicsInfos>
+          <ExtendedAttributes />
+        </Transition>
+        <Transition Id="28e1afb6-f5fe-4489-9bfc-9635cb2f7836" From="82afeebe-8c9d-4a63-b830-a629cc950cce" To="61b5ffbd-8484-4ec9-8bb7-03af4247d21e">
+          <Condition />
+          <Description />
+          <ConnectorGraphicsInfos>
+            <ConnectorGraphicsInfo ToolId="BizAgi_Process_Modeler" BorderColor="0">
+              <Coordinates XCoordinate="281" YCoordinate="122" />
+              <Coordinates XCoordinate="314" YCoordinate="122" />
+            </ConnectorGraphicsInfo>
+          </ConnectorGraphicsInfos>
+          <ExtendedAttributes />
+        </Transition>
+        <Transition Id="8c70a923-3374-46f0-b217-83673dee2316" From="61b5ffbd-8484-4ec9-8bb7-03af4247d21e" To="9fb11e72-e68b-4245-96e5-709abfda404a">
+          <Condition />
+          <Description />
+          <ConnectorGraphicsInfos>
+            <ConnectorGraphicsInfo ToolId="BizAgi_Process_Modeler" BorderColor="0">
+              <Coordinates XCoordinate="334" YCoordinate="142" />
+              <Coordinates XCoordinate="334" YCoordinate="206" />
+            </ConnectorGraphicsInfo>
+          </ConnectorGraphicsInfos>
+          <ExtendedAttributes />
+        </Transition>
+        <Transition Id="91e3ad1f-6c72-43c3-86d7-249709ccc434" From="9fb11e72-e68b-4245-96e5-709abfda404a" To="9ffa07e7-54d2-41bd-ae1f-aa7ee76980b7">
+          <Condition />
+          <Description />
+          <ConnectorGraphicsInfos>
+            <ConnectorGraphicsInfo ToolId="BizAgi_Process_Modeler" BorderColor="0">
+              <Coordinates XCoordinate="349" YCoordinate="221" />
+              <Coordinates XCoordinate="437" YCoordinate="221" />
+            </ConnectorGraphicsInfo>
+          </ConnectorGraphicsInfos>
+          <ExtendedAttributes />
+        </Transition>
+        <Transition Id="33b607f5-50f3-4005-8e47-31fdc27638cf" From="9ffa07e7-54d2-41bd-ae1f-aa7ee76980b7" To="9fb11e72-e68b-4245-96e5-709abfda404a">
+          <Condition />
+          <Description />
+          <ConnectorGraphicsInfos>
+            <ConnectorGraphicsInfo ToolId="BizAgi_Process_Modeler" BorderColor="0">
+              <Coordinates XCoordinate="457" YCoordinate="241" />
+              <Coordinates XCoordinate="457" YCoordinate="274" />
+              <Coordinates XCoordinate="334" YCoordinate="274" />
+              <Coordinates XCoordinate="334" YCoordinate="236" />
+            </ConnectorGraphicsInfo>
+          </ConnectorGraphicsInfos>
+          <ExtendedAttributes />
+        </Transition>
+        <Transition Id="1e724dd7-4ac9-4143-85e3-9f0127609303" From="61b5ffbd-8484-4ec9-8bb7-03af4247d21e" To="4be455ab-6530-471d-9e57-3507c16b0836" Name="">
+          <Condition />
+          <Description />
+          <ConnectorGraphicsInfos>
+            <ConnectorGraphicsInfo ToolId="BizAgi_Process_Modeler" BorderColor="0">
+              <Coordinates XCoordinate="354" YCoordinate="122" />
+              <Coordinates XCoordinate="412" YCoordinate="122" />
+            </ConnectorGraphicsInfo>
+          </ConnectorGraphicsInfos>
+          <ExtendedAttributes />
+        </Transition>
+        <Transition Id="72004137-e46b-4082-a58f-ea6eb2b58e3f" From="4be455ab-6530-471d-9e57-3507c16b0836" To="8a8b3968-9ae4-47df-bde5-181869c32d76" Name="">
+          <Condition />
+          <Description />
+          <ConnectorGraphicsInfos>
+            <ConnectorGraphicsInfo ToolId="BizAgi_Process_Modeler" BorderColor="0">
+              <Coordinates XCoordinate="502" YCoordinate="122" />
+              <Coordinates XCoordinate="587" YCoordinate="122" />
+            </ConnectorGraphicsInfo>
+          </ConnectorGraphicsInfos>
+          <ExtendedAttributes />
+        </Transition>
+        <Transition Id="2d7eb2f2-7ce2-47ee-a725-e777d29b54b5" From="9ffa07e7-54d2-41bd-ae1f-aa7ee76980b7" To="4be455ab-6530-471d-9e57-3507c16b0836" Name="">
+          <Condition />
+          <Description />
+          <ConnectorGraphicsInfos>
+            <ConnectorGraphicsInfo ToolId="BizAgi_Process_Modeler" BorderColor="0">
+              <Coordinates XCoordinate="457" YCoordinate="201" />
+              <Coordinates XCoordinate="457" YCoordinate="152" />
+            </ConnectorGraphicsInfo>
+          </ConnectorGraphicsInfos>
+          <ExtendedAttributes />
+        </Transition>
+      </Transitions>
+      <ExtendedAttributes />
+    </WorkflowProcess>
+  </WorkflowProcesses>
+  <ExtendedAttributes />
+</Package>

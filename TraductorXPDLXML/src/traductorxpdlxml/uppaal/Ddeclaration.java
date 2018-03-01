@@ -3,20 +3,20 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package traductorxpdlxml.xpdl;
+package traductorxpdlxml.uppaal;
 
 /**
  *
  * @author PC01
  */
-class Task {
-    int vacio;
+class Ddeclaration {
+    protected String value;
 
-    public int getVacio() {
-        return vacio;
+    public String getValue() {
+        return value;
     }
 
-    public void setVacio(int vacio) {
-        this.vacio = vacio;
+    public void setValue(String value) {
+        this.value = value;
     }
 }
